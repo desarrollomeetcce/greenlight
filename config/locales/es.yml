@@ -320,10 +320,10 @@ es:
     search:
       start: Comenzar búsqueda...
   landing:
-    about: "%{href} es una interface web para su servidor de conferencias de código abierto, BigBlueButton. Usted puede crear sus propias salas y ser anfitrión de sesiones o unirse a otras sólamente usando un enlace corto."
-    welcome: Bienvenido a <span class="green-grad">Greenlight</span>.
-    video: Vea nuestro tutorial sobre cómo utilizar Greenlight
-    upgrade: Muéstrame cómo actualizar a la versión 2.0
+    about: "Somos un sitio comunitario de consultas en línea. Programa tu cita virtual GRATIS."
+    welcome: Bienvenido a <span class="green-grad">MeetMcce</span>.
+    video: 
+    upgrade: 
     version: "Hemos publicado una nueva versión de Greenlight, pero la base de datos del sistema instalado no es compatible."
   language_default: Por omisión (idioma del navegador)
   ldap_error: No se puede conectar al servidor LDAP. Compruebe la configuración de LDAP en el archivo "env" y asegúrate de que tu servidor está ejecutándose.

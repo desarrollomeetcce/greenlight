@@ -3,7 +3,7 @@ version: '3'
 services:
   app:
     entrypoint: [bin/start]
-    image: meetmccev1:release-v2 
+    image: release-v2:master 
     container_name: meetmccev1
     env_file: .env
     restart: unless-stopped

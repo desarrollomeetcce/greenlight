@@ -326,8 +326,8 @@ en:
     search:
       start: Start searching...
   landing:
-    about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to MeetMcce 
+    about: "Somos un sitio comunitario de consultas en línea. Programa tu cita virtual GRATIS."
+    welcome: Welcome to  MeetMcce 
     video: 
     upgrade: 
     version: 
