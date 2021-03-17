@@ -260,7 +260,7 @@ es_MX:
     search:
       start: Iniciar busqueda...
   landing:
-    about: "Somos un sitio comunitario de consultas en línea. Programa tu cita virtual GRATIS."
+    about: "Somos un sitio comunitario de consultas en línea. Programa tu cita virtual GRATIS. "
     welcome: Bienvenido a <span class="green-grad">MeetCce</span>.
     video: 
     upgrade:
