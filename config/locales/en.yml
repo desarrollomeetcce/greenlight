@@ -326,8 +326,9 @@ en:
     search:
       start: Start searching...
   landing:
-    about: "Somos un sitio comunitario de consultas en línea. Programa tu cita virtual GRATIS."
-    welcome: Welcome to  MeetMcce 
+    about: "Reuniones MeetCCE en tiempo real
+Videoconferencias para personas y empresas con mensajería en tiempo real e intercambio de contenido."
+    welcome: Bienvenido a MeetMcce 
     video: 
     upgrade: 
     version: 

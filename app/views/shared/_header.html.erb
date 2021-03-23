@@ -23,7 +23,6 @@
           <%= t("administrator.site_settings.branding.invalid") %>
         <% end %>
       <% end %>
-
       <div class="d-flex ml-auto">
         <% if current_user %>
 
@@ -89,6 +88,9 @@
             </div>
           </div>
         <% elsif show_signin %>
+	 <%= link_to t("Inicio"), "#", :class => "btn btn-outline-primary mx-2" %>
+                <%= link_to t("Nosotros"), "#meetcce_you", :class => "btn btn-outline-primary mx-2" %>
+                <%= link_to t("Meetings"), "#features", :class => "btn btn-outline-primary mx-2" %>
           <% allow_greenlight_accounts = allow_greenlight_accounts? %>
           <% if allow_greenlight_accounts %>
             <%= link_to t("login"), signin_path, :class => "btn btn-outline-primary mx-2 sign-in-button" %>
@@ -102,6 +104,8 @@
             <%= link_to t("signup.title"), signup_path, :class => "btn btn-outline-primary mx-2 sign-in-button" %>
           <% end %>
         <% end %>
+<div>
+        </div>
       </div>
     </div>
   </div>

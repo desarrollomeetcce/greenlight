@@ -260,7 +260,8 @@ es_MX:
     search:
       start: Iniciar busqueda...
   landing:
-    about: "Somos un sitio comunitario de consultas en línea. Programa tu cita virtual GRATIS. "
+    about: "Reuniones MeetCCE en tiempo real
+Videoconferencias para personas y empresas con mensajería en tiempo real e intercambio de contenido."
     welcome: Bienvenido a <span class="green-grad">MeetCce</span>.
     video: 
     upgrade:

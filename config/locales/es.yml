@@ -320,8 +320,9 @@ es:
     search:
       start: Comenzar búsqueda...
   landing:
-    about: "Somos un sitio comunitario de consultas en línea. Programa tu cita virtual GRATIS. "
-    welcome: Bienvenido a <span class="green-grad">MeetMcce</span>.
+    about: "Reuniones MeetCCE en tiempo real
+Videoconferencias para personas y empresas con mensajería en tiempo real e intercambio de contenido."
+    welcome: Bienvenido a <span class="green-grad">Meetcce</span>.
     video: 
     upgrade: 
     version: "Hemos publicado una nueva versión de Greenlight, pero la base de datos del sistema instalado no es compatible."
