@@ -28,8 +28,8 @@
       </script>
     <% end %>
 
-    <title><%= yield(:page_title).present? ? yield(:page_title) : t("meetCCE") %></title>
-    <meta property="og:title" content="<%= yield(:page_title).present? ? yield(:page_title) : t("meetCCE") %>" />
+    <title>MeetCCE</title>
+    <meta property="og:title" content="meetcce" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="<%= yield(:page_desc).present? ? yield(:page_desc) : t("landing.about", href: "Greenlight", locale: :en) %>" />
     <meta property="og:url" content="<%= request.base_url %>" />
@@ -43,7 +43,7 @@
       window.GreenLight.WEBSOCKET_HOST = "<%= ENV['WEBSOCKET_HOST'] %>"
       window.GreenLight.RELATIVE_ROOT = "<%= relative_root %>"
     </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('favicon.ico') %>
@@ -84,71 +84,7 @@
     </div>
 
     <%= render "shared/footer" %>
-	<script>
-$(document).ready(function() {
-        var g1= $("#graph1");
-var g2= $("#graph2");
-var g3= $("#graph3");
-var g4= $("#graph4");
-var g1Chart= new Chart(g1, {
-      type: 'pie',
-      data: {
-        labels: ["",""],
-        datasets: [{
-          data: [91,9],
-          backgroundColor: [ "#46BFBD","#FFFFFF"],
-          hoverBackgroundColor: ["#5AD3D1","#FFFFFF"]
-        }]
-      },
-      options: {
-        responsive: true
-      }
-    });
-var g2Chart= new Chart(g2, {
-      type: 'pie',
-      data: {
-        labels: ["",""],
-        datasets: [{
-          data: [87,13],
-          backgroundColor: [ "#46BFBD","#FFFFFF"],
-          hoverBackgroundColor: ["#5AD3D1","#FFFFFF"]
-        }]
-      },
-      options: {
-        responsive: true
-      }
-    });
-var g3Chart= new Chart(g3, {
-      type: 'pie',
-      data: {
-        labels: ["",""],
-        datasets: [{
-          data: [95,5],
-          backgroundColor: [ "#46BFBD","#FFFFFF"],
-          hoverBackgroundColor: ["#5AD3D1","#FFFFFF"]
-        }]
-      },
-      options: {
-        responsive: true
-      }
-    });
-var g4Chart= new Chart(g4, {
-      type: 'pie',
-      data: {
-        labels: ["",""],
-        datasets: [{
-          data: [93,7],
-          backgroundColor: [ "#46BFBD","#FFFFFF"],
-          hoverBackgroundColor: ["#5AD3D1","#FFFFFF"]
-        }]
-      },
-      options: {
-        responsive: true
-      }
-    });
-      
-    });
-</script>
+	
   </body>
 </html>
 
