@@ -88,20 +88,20 @@
             </div>
           </div>
         <% elsif show_signin %>
-	 <%= link_to t("Inicio"), "#", :class => "btn btn-outline-primary mx-2" %>
-                <%= link_to t("Nosotros"), "#meetcce_you", :class => "btn btn-outline-primary mx-2" %>
-                <%= link_to t("Meetings"), "#features", :class => "btn btn-outline-primary mx-2" %>
+	        <%= link_to t("Inicio"), "/#", :class => "px-3 mx-1 mt-1 header-nav #" %>
+          <%= link_to t("Nosotros"), "/#meetcce_you", :class => "px-3 mx-1 mt-1 header-nav #meetcce_you"%>
+          <%= link_to t("Meetings"), "/#features", :class => "px-3 mx-1 mt-1 header-nav #features" %>
           <% allow_greenlight_accounts = allow_greenlight_accounts? %>
           <% if allow_greenlight_accounts %>
-            <%= link_to t("login"), signin_path, :class => "btn btn-outline-primary mx-2 sign-in-button" %>
+            <%= link_to t("login"), signin_path, :class => "px-3 mx-1 mt-1 header-nav" %>
           <% elsif Rails.configuration.loadbalanced_configuration %>
-            <%= link_to t("login"), omniauth_login_url(:bn_launcher), :class => "btn btn-outline-primary mx-2 sign-in-button" %>
+            <%= link_to t("login"), omniauth_login_url(:bn_launcher), :class => "px-3 mx-1 mt-1 header-nav" %>
           <% else %>
-            <%= link_to t("login"), signin_path, :class => "btn btn-outline-primary mx-2 sign-in-button" %>
+            <%= link_to t("login"), signin_path, :class => "px-3 mx-1 mt-1 header-nav" %>
           <% end %>
 
           <% if allow_user_signup? && allow_greenlight_accounts %>
-            <%= link_to t("signup.title"), signup_path, :class => "btn btn-outline-primary mx-2 sign-in-button" %>
+            <%= link_to t("signup.title"), signup_path, :class => "px-3 mx-1 mt-1 header-nav" %>
           <% end %>
         <% end %>
 <div>

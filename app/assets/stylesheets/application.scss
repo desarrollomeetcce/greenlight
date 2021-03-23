@@ -39,6 +39,17 @@
 @import "monolith.min.scss";
 @import "bootstrap-select.min";
 
+/*Nuevos estilos para la página*/
+@import "style.css";
+@import "bootstrap/css/bootstrap.min.css";
+@import "icofont/icofont.min.css";
+@import "boxicons/css/boxicons.min.css";
+@import "remixicon/remixicon.css";
+@import "venobox/venobox.css";
+@import "owl.carousel/assets/owl.carousel.min.css";
+@import "aos/aos.css";
+/*Fin nuevos estilos para la página*/
+
 @import "utilities/variables";
 @import "admins";
 @import "main";
