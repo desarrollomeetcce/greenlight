@@ -33,4 +33,4 @@ services:
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=m33tcc34dm1n878
+      - POSTGRES_PASSWORD=f2d0e71f68d84456
