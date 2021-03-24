@@ -89,8 +89,8 @@
           </div>
         <% elsif show_signin %>
 	        <%= link_to t("Inicio"), "/#", :class => "px-3 mx-1 mt-1 header-nav #" %>
-          <%= link_to t("Nosotros"), "/#meetcce_you", :class => "px-3 mx-1 mt-1 header-nav #meetcce_you"%>
-          <%= link_to t("Meetings"), "/#features", :class => "px-3 mx-1 mt-1 header-nav #features" %>
+          <%= link_to t("Nosotros"), "/#meetcce_you", :class => "px-3 mx-1 mt-1 header-nav #about-meetcce"%>
+          <%= link_to t("Meetings"), "/#features", :class => "px-3 mx-1 mt-1 header-nav #services" %>
           <% allow_greenlight_accounts = allow_greenlight_accounts? %>
           <% if allow_greenlight_accounts %>
             <%= link_to t("login"), signin_path, :class => "px-3 mx-1 mt-1 header-nav" %>
