@@ -20,7 +20,6 @@ RUN apk update \
     && apk add --update --no-cache $BUILD_PACKAGES $DEV_PACKAGES $RUBY_PACKAGES
 
 COPY Gemfile* ./
-COPY Gemfile Gemfile.lock $RAILS_ROOT/
 
 RUN bundle config --global frozen 1 \
     && bundle install --deployment --without development:test:assets -j4 --path=vendor/bundle \
