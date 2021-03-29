@@ -88,6 +88,11 @@
                     <%= f.check_box :send_demoted_email, checked: @selected_role.get_permission("send_demoted_email"), class: "custom-switch-input", disabled: edit_disabled || !current_role.get_permission("send_demoted_email") %>
                 <span class="custom-switch-indicator float-right"></span>
             </label>
+            <label class="custom-switch pl-0 mt-3 mb-3 w-100 text-left d-inline-block <%="form-disable" if !current_role.get_permission("can_view_calendar") %>">
+                <span class="ml-0 custom-switch-description"><%= t("Crear horarios")%></span>
+                    <%= f.check_box :send_demoted_email, checked: @selected_role.get_permission("can_view_calendar"), class: "custom-switch-input", disabled: edit_disabled || !current_role.get_permission("can_view_calendar") %>
+                <span class="custom-switch-indicator float-right"></span>
+            </label>
 
             <div class="mt-4">
                 <%= f.submit t("update"), class: "btn btn-primary float-right ml-2 mb-2", disabled: edit_disabled %>

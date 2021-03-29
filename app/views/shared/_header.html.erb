@@ -70,6 +70,10 @@
                 <%= link_to admin_roles_path, class: "dropdown-item" do %>
                   <i class="dropdown-icon fas fa-user-tie mr-3"></i><%= t("header.dropdown.account_settings") %>
                 <% end %>
+              <% elsif highest_role.get_permission("can_view_calendar")%>
+                <%= link_to #, class: "dropdown-item" do %>
+                  <i class="dropdown-icon fas fa-user-tie mr-3"></i><%= t("Horarios") %>
+                <% end %>
               <% end %>
               <div class="dropdown-divider"></div>
               <% if Rails.configuration.help_url.present? %>
