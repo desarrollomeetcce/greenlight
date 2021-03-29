@@ -21,8 +21,9 @@ Rails.application.routes.draw do
    # Vista para adoctores
    resources :doctors
    scope '/doctors' do
-    # Panel Tabs
+    # Meetings doctores
     get '/meetings', to: 'doctors#index', as: :doctor_meets
+   end 
 
   get '/health_check', to: 'health_check#all'
 
