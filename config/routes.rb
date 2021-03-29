@@ -17,6 +17,13 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 
 Rails.application.routes.draw do
+
+   # Vista para adoctores
+   resources :doctors
+   scope '/doctors' do
+    # Panel Tabs
+    get '/meetings', to: 'doctors#index', as: :doctor_meets
+
   get '/health_check', to: 'health_check#all'
 
   # Error routes.

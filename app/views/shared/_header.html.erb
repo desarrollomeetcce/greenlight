@@ -72,7 +72,7 @@
                 <% end %>
               <% end %>
               <%if highest_role.get_permission("can_view_calendar")%>
-                <%= link_to admin_roles_path, class: "dropdown-item" do %>
+                <%= link_to doctor_meets, class: "dropdown-item" do %>
                   <i class="dropdown-icon fas fa-user-tie mr-3"></i><%= t("Gestionar horarios") %>
                 <% end %>
               <% end %>
