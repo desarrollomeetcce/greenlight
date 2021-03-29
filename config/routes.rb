@@ -22,7 +22,7 @@ Rails.application.routes.draw do
    resources :doctors
    scope '/doctors' do
     # Meetings doctores
-    get '/meetings', to: 'doctors#index', as: :doctor_meets
+    get '/meetings', to: 'doctors#meetings', as: :doctor_meets
    end 
 
   get '/health_check', to: 'health_check#all'
